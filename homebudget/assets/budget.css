@@ -192,7 +192,6 @@ main { max-width: none; margin: 0 auto; padding: 1.5rem clamp(0.75rem, 3vw, 3rem
 .clr-text  { color: var(--accent);  }
 .clr-green { color: var(--green);  }
 .clr-red   { color: var(--red);    }
-.clr-text  { color: var(--text);   }
 .clr-amber { color: var(--amber);  }
 
 /* ── Sections ── */

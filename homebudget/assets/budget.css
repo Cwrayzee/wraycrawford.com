@@ -32,7 +32,7 @@
 
 body {
   font-family: 'Comfortaa', cursive;
-  background: linear-gradient(180deg, #2a1000 0%, #1a1a0a 30%, #0a1a3a 70%, #060d1e 100%);
+  background: linear-gradient(180deg, #ffffff -10%, #0a1a4d 100%);
   color: var(--text);
   min-height: 100vh;
   overflow-x: hidden;
@@ -45,10 +45,10 @@ body::before {
   inset: 0;
   will-change: transform;
   background:
-    radial-gradient(ellipse 70% 55% at 12% 15%,  rgba(249,115,22,.28)  0%, transparent 55%),
-    radial-gradient(ellipse 55% 45% at 88% 80%,  rgba(7,89,208,.30)    0%, transparent 60%),
-    radial-gradient(ellipse 40% 35% at 65% 8%,   rgba(200,80,10,.15)   0%, transparent 50%),
-    radial-gradient(ellipse 60% 50% at 35% 90%,  rgba(14,100,233,.15)  0%, transparent 45%);
+    radial-gradient(ellipse 70% 55% at 12% 15%,  rgba(200,220,255,.35)  0%, transparent 60%),
+    radial-gradient(ellipse 55% 45% at 88% 80%,  rgba(7,40,140,.25)     0%, transparent 55%),
+    radial-gradient(ellipse 40% 35% at 65% 8%,   rgba(180,210,255,.20)  0%, transparent 45%),
+    radial-gradient(ellipse 60% 50% at 35% 90%,  rgba(10,26,100,.20)    0%, transparent 50%);
   pointer-events: none;
   z-index: 0;
 }

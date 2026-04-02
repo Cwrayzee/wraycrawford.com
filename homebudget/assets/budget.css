@@ -684,7 +684,7 @@ tbody td { padding: 0.4rem 0.65rem; vertical-align: middle; }
 }
 .paid-check:checked { background: var(--green); border-color: var(--green); }
 .paid-check:checked::after {
-  content: ''; position: absolute; left: 3px; top: 0px;
+  content: ''; position: absolute; left: 3px; top: 0;
   width: 5px; height: 9px; border: 2px solid #000;
   border-top: none; border-left: none; transform: rotate(45deg);
 }
@@ -703,7 +703,7 @@ tr.row-paid td:first-child .t-input { text-decoration: line-through; }
 }
 .split-check:checked { background: #22d3ee; border-color: #22d3ee; box-shadow: 0 0 10px rgba(34,211,238,0.65); }
 .split-check:checked::after {
-  content: ''; position: absolute; left: 3px; top: 0px;
+  content: ''; position: absolute; left: 3px; top: 0;
   width: 5px; height: 9px; border: 2px solid #000;
   border-top: none; border-left: none; transform: rotate(45deg);
 }

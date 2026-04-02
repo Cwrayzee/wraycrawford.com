@@ -300,6 +300,46 @@ ul  { list-style: none; }
   margin-bottom: 4rem;
 }
 
+.page-header-top {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.page-header-top h1 { margin-bottom: 0; }
+
+/* IMDb button */
+.imdb-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.85rem;
+  background: #f5c518;
+  color: #000;
+  border-radius: 4px;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: opacity var(--t), transform var(--t);
+  flex-shrink: 0;
+}
+
+.imdb-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.imdb-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: #000;
+  flex-shrink: 0;
+}
+
 .page-header h1 {
   font-family: var(--serif);
   font-size: clamp(2.2rem, 5vw, 4rem);

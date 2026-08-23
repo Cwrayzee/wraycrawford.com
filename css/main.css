@@ -821,6 +821,121 @@ ul  { list-style: none; }
 }
 
 /* ============================================================
+   BLOG PAGE
+   ============================================================ */
+.blog-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 5rem;
+  align-items: start;
+  padding-bottom: 6rem;
+}
+
+/* Sticky "previous posts" column */
+.blog-sidebar {
+  position: sticky;
+  top: calc(var(--nav-h) + 2rem);
+}
+
+.blog-sidebar-title {
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.blog-post-list li { margin-bottom: 1.5rem; }
+.blog-post-list li:last-child { margin-bottom: 0; }
+
+.blog-post-list a { display: block; }
+
+.blog-post-list .bp-date {
+  display: block;
+  font-size: 0.55rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.blog-post-list .bp-title {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--light);
+  line-height: 1.45;
+  transition: color var(--t);
+}
+
+.blog-post-list a:hover .bp-title { color: var(--white); }
+
+/* Posts column */
+.blog-post {
+  padding-bottom: 4rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  scroll-margin-top: calc(var(--nav-h) + 1.5rem);
+}
+
+.blog-post:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.blog-post-date {
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+.blog-post-title {
+  font-family: var(--serif);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 300;
+  color: var(--white);
+  letter-spacing: -0.01em;
+  margin-bottom: 1.75rem;
+}
+
+.blog-post-body p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--light);
+  line-height: 1.85;
+  margin-bottom: 1.5rem;
+}
+
+.blog-post-body p:last-child { margin-bottom: 0; }
+
+@media (max-width: 900px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .blog-sidebar {
+    position: static;
+  }
+  .blog-post-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+  }
+  .blog-post-list li { margin-bottom: 0; }
+}
+
+@media (max-width: 600px) {
+  .blog-grid { padding-bottom: 3rem; }
+  .blog-post { padding-bottom: 2.5rem; margin-bottom: 2.5rem; }
+}
+
+/* ============================================================
    CONTACT PAGE
    ============================================================ */
 .contact-grid {

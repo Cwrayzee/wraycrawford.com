@@ -925,6 +925,59 @@ ul  { list-style: none; }
 
 .blog-post-body p:last-child { margin-bottom: 0; }
 
+.blog-post-image {
+  max-width: 340px;
+  border-radius: 4px;
+  margin-bottom: 1.75rem;
+}
+
+.blog-post-image-caption {
+  margin-top: -1.25rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.blog-read-more {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--light);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: color var(--t), border-color var(--t);
+}
+
+.blog-read-more:hover {
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.blog-single {
+  max-width: 760px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.blog-back-link {
+  display: inline-block;
+  margin-bottom: 2.5rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: color var(--t), border-color var(--t);
+}
+
+.blog-back-link:hover {
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
 @media (max-width: 900px) {
   .blog-grid {
     grid-template-columns: 1fr;

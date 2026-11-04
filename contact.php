@@ -58,7 +58,7 @@ if($_POST) {
 
     <!-- Begin Meta Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Wray Crawford SAG/AFTRA Actor"/>
+    <meta name="description" content="Wray Crawford Actor"/>
     <meta name="keywords" content="HTML, CSS, JavaScript, Responsive, Actor, Acting, Dramatic"/>
     <meta name="author" content="WrayCrawford"/>
     <!-- End Meta Tags -->
@@ -214,7 +214,7 @@ if($_POST) {
 
     <!-- Begin Meta Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Wray Crawford SAG/AFTRA Actor"/>
+    <meta name="description" content="Wray Crawford Actor"/>
     <meta name="keywords" content="HTML, CSS, JavaScript, Responsive, Actor, Acting, Dramatic"/>
     <meta name="author" content="WrayCrawford"/>
     <!-- End Meta Tags -->

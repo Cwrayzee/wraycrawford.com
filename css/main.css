@@ -22,7 +22,7 @@
   --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   --sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
-  --nav-h:  68px;
+  --nav-h:  76px;
   --gutter: clamp(1.25rem, 5vw, 4rem);
   --max-w:  1120px;
   --t:      0.3s ease;
@@ -63,7 +63,7 @@ ul  { list-style: none; }
 
 .nav-logo {
   font-family: var(--serif);
-  font-size: 1.05rem;
+  font-size: 1.3rem;
   font-weight: 400;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -77,7 +77,7 @@ ul  { list-style: none; }
 }
 
 .nav-links a {
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -103,6 +103,10 @@ ul  { list-style: none; }
 
 .nav-links a:hover::after,
 .nav-links a.active::after { transform: scaleX(1); }
+
+@media (max-width: 1080px) {
+  .nav-links { gap: 1.6rem; }
+}
 
 /* Hamburger */
 .nav-toggle {
@@ -130,7 +134,7 @@ ul  { list-style: none; }
 .nav-toggle.open span:nth-child(2) { opacity: 0; }
 .nav-toggle.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 
-@media (max-width: 720px) {
+@media (max-width: 920px) {
   .nav-toggle { display: flex; }
 
   .nav-links {
@@ -146,7 +150,7 @@ ul  { list-style: none; }
   }
 
   .nav-links.open { transform: translateX(0); }
-  .nav-links a { font-size: 0.8rem; letter-spacing: 0.3em; }
+  .nav-links a { font-size: 1rem; letter-spacing: 0.3em; }
 }
 
 /* ============================================================
@@ -279,6 +283,102 @@ ul  { list-style: none; }
     padding-top: 2.5rem;
   }
 }
+
+/* ---- Hero news link ---- */
+.hero-news {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  align-self: flex-start;
+  margin: -1.5rem 0 2.5rem;
+  padding-left: 1rem;
+  border-left: 1px solid rgba(255,255,255,0.25);
+  transition: border-color var(--t);
+}
+.hero-news:hover { border-color: var(--white); }
+.hero-news-label {
+  font-size: 0.55rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.hero-news-title {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 300;
+  color: var(--off-white);
+}
+.hero-news:hover .hero-news-title { color: var(--white); }
+
+/* ============================================================
+   HOME INTRO + LATEST POSTS (index.html)
+   ============================================================ */
+.home-intro {
+  padding: 6rem 0;
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
+.home-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 5rem;
+}
+.home-section-title {
+  font-family: var(--serif);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 300;
+  color: var(--white);
+  margin-bottom: 1.75rem;
+}
+.home-intro-text p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.9;
+  color: var(--light);
+  margin-bottom: 1.25rem;
+  max-width: 62ch;
+}
+.home-intro-text a { color: var(--off-white); border-bottom: 1px solid rgba(255,255,255,0.25); }
+.home-intro-text a:hover { color: var(--white); border-color: var(--white); }
+.home-intro-text strong { font-weight: 400; color: var(--off-white); }
+p.home-intro-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 2rem;
+  margin-top: 2rem;
+}
+.home-intro-links a,
+.home-intro-text .home-intro-links a {
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 0;
+  transition: color var(--t);
+}
+.home-intro-links a:hover,
+.home-intro-text .home-intro-links a:hover { color: var(--white); }
+
+@media (max-width: 860px) {
+  .home-intro { padding: 4rem 0; }
+  .home-intro-grid { grid-template-columns: minmax(0, 1fr); gap: 3.5rem; }
+  .hero-news { margin-top: -1.5rem; }
+}
+
+/* ---- Homepage type scale (~1.2x, same proportions) ---- */
+.home .hero-eyebrow        { font-size: 0.72rem; }
+.home .hero-name           { font-size: clamp(3.85rem, 7.8vw, 7.8rem); }
+.home .hero-tagline        { font-size: 1rem; max-width: 380px; }
+.home .hero-news-label     { font-size: 0.68rem; }
+.home .hero-news-title     { font-size: 1.4rem; }
+.home .btn                 { font-size: 0.72rem; padding: 0.9rem 2.15rem; }
+.home .home-section-title  { font-size: clamp(1.9rem, 3.6vw, 2.65rem); }
+.home .home-intro-text p   { font-size: 1.08rem; }
+.home .home-intro-links a,
+.home .home-intro-text .home-intro-links a { font-size: 0.72rem; }
+.home .blog-sidebar-title  { font-size: 0.72rem; }
+.home .blog-post-list .bp-date  { font-size: 0.66rem; }
+.home .blog-post-list .bp-title { font-size: 1.2rem; }
+.home .hero-right img { object-position: 62% top; }
 
 /* ============================================================
    INTERIOR PAGE SHELL

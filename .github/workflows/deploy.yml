@@ -25,3 +25,7 @@ jobs:
             **/.git*
             **/.git*/**
             **/node_modules/**
+            **/.DS_Store
+            error_log
+            wp-cli.yml
+            .ftpquota
